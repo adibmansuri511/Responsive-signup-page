@@ -1,0 +1,174 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #f0e2e2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.mainBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 8px 7px 0 rgba(0, 0, 0);
+}
+
+.box {
+    height: 450px;
+    width: 350px;
+}
+
+#box-01 {
+    background-color: #ffffff;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-02 {
+    background-color: #eb5368;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.textLogo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 15px;
+}
+
+.icons i {
+    color: #000000;
+    padding: 10px 12px;
+}
+
+.box .myAccount {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box div>p {
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+
+input[type=email] {
+    width: 225px;
+    height: 30px;
+    background-color: #d3d3d3;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input[type=password] {
+    width: 225px;
+    height: 30px;
+    background-color: #d3d3d3;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+.box .forgotPwd {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #ed593b;
+    color: #ffffff;
+    border: none;
+    border-radius: 17.5px 17.5px 17.5px 17.5px;
+    text-transform: uppercase;
+}
+
+#box-02 h2 {
+    width: 225px;
+}
+
+#box-02 p {
+    width: 225px;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+    .mainBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainBox {
+
+        box-shadow: 0px 0px 0px 0;
+    }
+
+    .box {
+        width: 300px;
+        height: 350px;
+    }
+
+    #box-01 {
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 20px;
+    }
+
+    #box-02 {
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 8px 20px;
+        background-color: #ed593b;
+        font-size: 0.8rem;
+    }
+
+}

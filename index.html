@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <!-- Google Fonts -->
+    <!-- Google Fonts ('Poppins', sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts ('Nunito Sans', sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,7 +18,11 @@
         rel="stylesheet">
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font-Awesome CDN -->
+    <!-- Font-Awesome CDN (5.15.4)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font-Awesome CDN (6.4.2)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,25 +34,32 @@
         <div class="mainBox">
             <form>
                 <div class="box" id="box-01">
-                    <div class="textLogo">Login</div>
-                    <div class="icons">
-                        <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                    <div class="textLogo">sign up</div>
+                    <div class="input-field">
+                        <label for="name"><i class="fas fa-user"></i></label>
+                        <input type="text" class="dimension" id="name" name="name" placeholder="Your Name">
                     </div>
-                    <div class="myAccount">
-                        <p>or use your account</p>
+                    <div class="input-field">
+                        <label for="email"><i class="fas fa-envelope"></i></label>
+                        <input type="email" class="dimension" id="email" name="email" placeholder="Your Email">
                     </div>
-                    <input type="email" name="email" id="" placeholder="Email">
-                    <input type="password" name="password" id="" placeholder="Password">
-                    <div class="forgotPwd">
-                        <p>Forgot your password?</p>
+                    <div class="input-field">
+                        <label for="pwd"><i class="fas fa-lock"></i></label>
+                        <input type="password" class="dimension" id="pwd" name="password" placeholder="Your Password">
                     </div>
-                    <button type="submit">log in</button>
+                    <div class="input-field">
+                        <label for="cpwd"><i class="fas fa-key"></i></label>
+                        <input type="password" class="dimension" id="cpwd" name="cpassword"
+                            placeholder="Repeat your password">
+                    </div>
+                    <div class="tc-checkbox">
+                        <input type="checkbox" name="terms&service" id="">
+                        <p>I agree all statements in <span style="color: #0000f5;">Terms of Service</span></p>
+                    </div>
+                    <button type="submit">Register</button>
                 </div>
             </form>
             <div class="box" id="box-02">
-                <h2>HTML CSS Login Form</h2>
-                <p>This login form is created using pure HTML and CSS for social icons, FontAwesome is used.</p>
             </div>
         </div>
     </div>
